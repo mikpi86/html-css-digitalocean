@@ -3,3 +3,62 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.padding_top_bottom_30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.padding_top_bottom_15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.padding_left_right_15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.margin_top_bottom_10 {
+  margin: 10px 0;
+}
+
+/* _DEBUG */
+
+[class*="col-"] {
+  border: 1px solid black;
+}
+
+.grey_bg {
+  background-color: lightgrey;
+}
+.lightblue_bg {
+  background-color: lightblue;
+}
+
+.sm_padding_all_30 {
+  padding: 30px;
+}
+
+.jumbo_box {
+  border: 1px solid green;
+  background-color: white;
+}
+
+      /* margine link sezione loghi */
+.margin_top_10 {
+  margin-top: 10px;
+}
+      /* margine link sezione loghi */
+
+.image {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: pink;
+}
