@@ -13,21 +13,83 @@
     <link rel="stylesheet" href="css/master.css">
     <title>DigitalOcean</title>
   </head>
-  <body>
+  <body class="ms_debug">
     <header>
+
       <!-- navbar -->
       <div class="wrapper">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-6 col-md-4 sm_padding_all_30">
-              lorem ipsum
-            </div>
-            <div class="col-xs-6 col-md-8 text-right sm_padding_all_30">
-              lorem ipsum
-            </div>
-          </div>
-        </div>
-      </div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar_wrapper">
+                <div class="navbar_wrapper">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                      <img id="nav_logo" src="img/logo.png" alt="logo">
+                    </a>
+                  </div>
+
+                  <div class="left_nav">
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Customers</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Pricing</a></li>
+                      </ul>
+                    </div> <!--navbar collapse-->
+                  </div> <!--left nav-->
+
+                  <div class="right_nav">
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#">Docs</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Login</a></li>
+                        <li><a id="nav_button" class="btn btn-default" href="#">Sign in</a></li>
+                      </ul>
+                    </div> <!--navbar collapse-->
+                  </div> <!--right nav-->
+
+                </div> <!--navbar wrapper-->
+              </div> <!--navbar wrapper-->
+            </nav>
+          </div> <!--row-->
+        </div> <!--container fluid-->
+
       <!-- jumbo top -->
       <div class="ms_jumbo lightblue_bg">
         <div class="wrapper">
@@ -42,10 +104,11 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div> <!--row-->
+          </div> <!--container fluid-->
+        </div> <!--wrapper-->
+      </div> <!--ms_ jumbo-->
+
       <!-- jumbo bottom -->
       <div class="padding_top_bottom_15 text-center grey_bg">
         <div class="wrapper">
@@ -65,10 +128,10 @@
                 </div>
                 <p class="margin_top_10">Lorem ipsum dolor sit amet</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div> <!--row-->
+          </div> <!--container fluid-->
+        </div> <!--wrapper-->
+      </div> <!--padding_top_bottom_15-->
     </header>
     <main>
       <!-- section 1 -->
@@ -89,17 +152,19 @@
                   <li>lorem</li>
                 </ul>
               </div>
-              <div class="col-xs-12 col-sm-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-              <div class="col-xs-12 col-sm-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-              <div class="col-xs-12 col-sm-offset-2 col-sm-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-              <div class="col-xs-12 col-sm-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <div class="col-xs-12 col-sm-10">
+                <div class="col-xs-12 col-sm-6">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
               </div>
             </div>
           </div>
