@@ -5,6 +5,30 @@
 }
 
 /* utility */
+  /* fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.4em;
+}
+.ms_text_small {
+  font-size: 0.8em;
+}
+.bold_text {
+  font-weight: bold;
+}
+.ms_line_height_big {
+  line-height: 30px;
+}
+  /* distanziamenti */
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -14,19 +38,55 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .padding_top_bottom_15 {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 .padding_left_right_15 {
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.margin_top_bottom_30 {
+  margin: 30px 0;
+}
 .margin_top_bottom_10 {
   margin: 10px 0;
+}
+  /* links */
+a {
+  color:rgb(0,106,255);
+}
+a:hover {
+  text-decoration: none;
+}
+
+  /* colors */
+.ms_text_blue {
+  color: rgb(3,27,79);
+}
+.ms_text_lightblue {
+  color:rgb(0,106,255);
+}
+.ms_text_white {
+  color: rgb(255,255,255);
+}
+.ms_text_grey {
+  color: rgb(116, 120, 140);
+}
+.grey_bg {
+  background-color: rgb(242, 244, 249);
+}
+
+  /* buttons */
+.ms_blue_button {
+  background-color: rgb(0,106,255);
+  border-color: rgb(0,106,255);
+  color: rgb(255,255,255);
+}
+.ms_google_button {
+  background-color: rgb(255,255,255);
+  color: rgb(156, 156, 156);
 }
 
 /* NAVBAR */
@@ -64,7 +124,7 @@
   padding-top: 4px;
 }
 .navbar-brand {
-  padding: 10px 15px;
+  padding: 10px 15px 10px 0;
 }
 
   /* nav button */
@@ -81,6 +141,7 @@
   color: white;
   background-color: rgb(0,106,255);
 }
+
   /* nav toggle */
 .navbar-default .navbar-toggle {
   border: none;
@@ -90,19 +151,88 @@
 }
 
 /* JUMBO */
+  /* jumbo top */
 .ms_jumbo {
   padding-top: 57px;
+  background-image: url('../img/bg_jumbotron.svg');
+  background-size: cover;
+  background-position: center;
+}
+.jumbo_box {
+  background-color: white;
+  border-radius: 5px;
+}
+.ms_jumbo .col-xs-12.col-sm-7 {
+  padding-left: 0;
+}
+.ms_jumbo .col-xs-12.col-sm-5 {
+  padding-right: 0;
+}
+.ms_jumbo_form_margin {
+  margin-bottom: 5px;
+}
+.jumbo_button {
+  width: 100%;
+}
+#jumbo_button_create:hover {
+  background-color: rgb(21, 48, 176);
+  border-color: rgb(21, 48, 176);
+  color: rgb(255,255,255);
+}
+#jumbo_button_sign_up:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
+}
+#jumbo_button_sign_up > img {
+  max-width: 15px;
+  padding-top: 2px;
+  float: left;
+}
+.jumbo_box p > a {
+  color:rgb(0,106,255);
+  text-decoration: underline;
+}
+.jumbo_box p > a:hover {
+  color: rgb(21, 48, 176);
 }
 
+  /* jumbo bottom */
+.ms_jumbo_bottom img {
+  width: 100%;
+  height: 90px;
+}
+
+/* MAIN */
+  /* section 1 */
+#section_1 .col-xs-12.col-sm-2 {
+  margin-bottom: 20px;
+}
+#section_1 ul > li {
+  list-style: none;
+  padding-left: 3px;
+  border-left: 1px solid rgb(156, 156, 156);
+}
+#section_1 ul > li:hover {
+  border-left: 3px solid rgb(92, 125, 213);
+}
+
+#section_1 ul a {
+  /* color: rgb(156, 156, 156); */
+}
+#section_1 ul a:hover {
+  color:rgb(0,106,255);
+}
+#section_1 img {
+  display: block;
+  margin-bottom: 20px;
+}
 /* _DEBUG */
 
 .ms_debug [class*="col-"] {
   border: 1px solid black;
 }
 
-.grey_bg {
-  background-color: lightgrey;
-}
+
 .lightblue_bg {
   background-color: lightblue;
 }
@@ -111,10 +241,7 @@
   padding: 30px;
 }
 
-.jumbo_box {
-  border: 1px solid green;
-  background-color: white;
-}
+
 
       /* margine link sezione loghi */
 .margin_top_10 {
