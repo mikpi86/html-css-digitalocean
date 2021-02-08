@@ -60,6 +60,9 @@ a {
 a:hover {
   text-decoration: none;
 }
+.fas.fa-chevron-right.ms_chevron_small {
+  font-size: 0.7em;
+}
 
   /* colors */
 .ms_text_blue {
@@ -76,6 +79,13 @@ a:hover {
 }
 .grey_bg {
   background-color: rgb(242, 244, 249);
+}
+.gradient_bg {
+  background: linear-gradient(0deg, rgba(0,33,156,255) 0%, rgba(0,71,197,255) 93%);
+}
+
+.blue_bg {
+  background-color: rgb(3,27,79);
 }
 
   /* buttons */
@@ -245,6 +255,46 @@ a:hover {
 }
 
   /* section 4 */
+#section_4 .table>tbody>tr>td.first_row {
+  border-top: none;
+}
+#section_4 .table>tbody>tr>td>a {
+  color: rgb(49, 201, 227);
+}
+#section_4 .table>tbody>tr>td>a:hover {
+  color: rgb(11, 153, 162);
+}
+  /* section 5 */
+.rockerbox-box {
+  /* width: 40vw; */
+  min-width: 300px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#section_5 .chevron_left>a>i,
+#section_5 .chevron_right>a>i {
+  display: none;
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+  .rockerbox-box {
+    max-width: 500px;
+  }
+  #section_5 .chevron_left>a>i,
+  #section_5 .chevron_right>a>i {
+    display: inline-block;
+  }
+}
+
+
+
+
+
 
 
 
@@ -254,16 +304,13 @@ a:hover {
   border: 1px solid black;
 }
 
-
-.lightblue_bg {
-  background-color: lightblue;
-}
-
 .sm_padding_all_30 {
   padding: 30px;
 }
 
-
+.table>tbody>tr>td.first_row {
+  border-top: none;
+}
 
       /* margine link sezione loghi */
 .margin_top_10 {
