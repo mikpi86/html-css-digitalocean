@@ -1,4 +1,4 @@
-padding_all_30* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -90,9 +90,11 @@ a:hover {
 .gradient_bg {
   background: linear-gradient(0deg, rgba(0,33,156,255) 0%, rgba(0,71,197,255) 93%);
 }
-
 .blue_bg {
   background-color: rgb(3,27,79);
+}
+.lightblue_bg {
+  background-color: rgb(0,106,255);
 }
 
   /* buttons */
@@ -323,6 +325,85 @@ footer li {
 footer li:hover {
   color:rgb(255,255,255);
 }
+
+/* HELPER */
+.ms_helper {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+  /* bubble */
+.bubble {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 0px;
+  background: #FFFFFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: #7F7F7F solid 1px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 4px 0 4px 16px;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -16px;
+  top: 29px;
+}
+.bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 4px 0 4px 16px;
+  border-color: transparent #7F7F7F;
+  display: block;
+  width: 0;
+  z-index: 0;
+  right: -17px;
+  top: 29px;
+}
+.bubble > p {
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+  /* shark */
+.ms_shark {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+}
+.ms_shark > img {
+  width: 100%;
+  padding-top: 10px;
+}
+.ms_badge {
+  background-color: red;
+  color: white;
+  padding:5px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
 
 /* TABLET */
 @media (min-width: 768px) and (max-width: 991px){
